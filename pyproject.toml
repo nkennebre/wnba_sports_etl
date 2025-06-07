@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "sports-etl-project"
+version = "0.1.0"
+description = "A data engineering pipeline for processing and transforming WNBA play-by-play and shot chart data into analytics-ready formats. Built to showcase production-quality ETL and modeling workflows with a focus on women's sports."
+authors = ["Maxine Kennebrew <ksurant@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "sports_etl" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+pandas = "^2.2.3"
+python-dotenv = "^1.1.0"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.13.4"
+sqlalchemy = "^2.0.41"
+jupyterlab = "^4.4.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

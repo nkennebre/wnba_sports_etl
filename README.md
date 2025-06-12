@@ -1,5 +1,7 @@
 # WNBA Sports ETL 🏀
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Work In Progress 🚧**
 
 A production-ready data engineering pipeline for processing, transforming, and analyzing women's sports data — starting with WNBA team stats and game logs.

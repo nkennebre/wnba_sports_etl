@@ -2,6 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
+
+
 **Work In Progress 🚧**
 
 A production-ready data engineering pipeline for processing, transforming, and analyzing women's sports data — starting with WNBA team stats and game logs.

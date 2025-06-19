@@ -24,3 +24,6 @@ ehthumbs.db
 
 # Logs
 *.log
+
+# Working notebook
+wnba_etl_exploration.ipynb

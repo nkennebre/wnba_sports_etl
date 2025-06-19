@@ -76,4 +76,6 @@ from sports_etl.etl.load import save_to_csv, save_to_sqlite
 Project by Maxine Kennebrew  
 **“Beast on the ice, stat nerd in the lab.”**
 
+🚀 Part of the PlayHer.ai initiative — building open, analytics-first tools to elevate women’s sports.
+
 *Building on open data sources to help grow a stronger community of women's sports analytics practitioners.*

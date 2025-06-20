@@ -66,8 +66,10 @@ from sports_etl.etl.transform import transform_team_stats
 from sports_etl.etl.load import save_to_csv, save_to_sqlite
 ```
 
+### Attribution
 
-## Credits
+Basketball icon created by [ranksol graphics - Flaticon](https://www.flaticon.com/free-icons/basketball)
+
 ## Credits
 
 - Primary WNBA Game Logs dataset (2015–2024): [My Kaggle dataset](https://www.kaggle.com/datasets/natoshakennebrew/wnba-gamelogs-2015-2024)

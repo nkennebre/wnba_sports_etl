@@ -1,6 +1,7 @@
 import matplotlib.image as mpimg
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 from sports_etl.config import DEFAULT_WATERMARK_POSITION
+import os
 
 
 def get_nwsl_brand_colors():
@@ -74,32 +75,29 @@ def get_team_secondary_color_wnba(team):
     }
     return secondary_colors.get(team, "#CCCCCC")  # fallback color
    
-def apply_playher_watermark(ax, position="bottom-right"):
+def apply_playher_watermark(fig, position="bottom-right"):
     """
-    Adds a simple 'via playher.ai' text watermark to a matplotlib Axes.
-
-    Parameters:
-        ax (matplotlib.axes.Axes): The axes to add the watermark to.
-        position (str): One of "bottom-right", "bottom-left", "top-left", "top-right".
+    Adds a simple 'via playher.ai' watermark to the entire figure canvas.
     """
     pos_map = {
-        "bottom-right": (0.99, -0.2, 'right'),
-        "bottom-left": (0.01, -0.2, 'left'),
-        "top-left": (0.01, 1.05, 'left'),
-        "top-right": (0.99, 1.05, 'right'),
+        "bottom-right": dict(x=0.995, y=0.01, ha="right", va="bottom"),
+        "bottom-left":  dict(x=0.005, y=0.01, ha="left",  va="bottom"),
+        "top-left":     dict(x=0.005, y=0.99, ha="left",  va="top"),
+        "top-right":    dict(x=0.995, y=0.99, ha="right", va="top"),
     }
 
     if position not in pos_map:
         raise ValueError(f"Invalid position: {position}")
 
-    x, y, ha = pos_map[position]
-    ax.text(
-        x, y, "via playher.ai",
-        transform=ax.transAxes,
-        ha=ha, va='top',
-        fontsize=8, alpha=0.6
+    cfg = pos_map[position]
+    fig.text(
+        cfg["x"], cfg["y"],
+        "via playher.ai",
+        ha=cfg["ha"], va=cfg["va"],
+        fontsize=8, alpha=0.5
     )
-    
+
+  
 def get_team_palette(league: str = "wnba") -> dict:
     league = league.lower()
     if league == "wnba":
@@ -121,3 +119,15 @@ def get_team_secondary_color(league: str, team: str) -> str:
         return get_team_secondary_color_pwhl(team)
     else:
         raise ValueError(f"Unsupported league: {league}")
+
+def get_team_logo_path(team_abbr: str, league: str = "wnba") -> str:
+    """
+    Returns the file path for a team logo based on team abbreviation and league.
+    """
+    base_dir = os.path.dirname(__file__)
+    logo_dir = os.path.join(base_dir, "logos", league.lower())
+    logo_path = os.path.join(logo_dir, f"{team_abbr.upper()}.png")
+    
+    if not os.path.exists(logo_path):
+        raise FileNotFoundError(f"Logo for {team_abbr} in {league} not found.")
+    return logo_path

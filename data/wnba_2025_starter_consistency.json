@@ -1,0 +1,93 @@
+[
+  {
+    "team": "Las Vegas Aces",
+    "total_games": 17,
+    "most_common_lineup_games": 14,
+    "unique_lineups": 3,
+    "consistency_score": 0.824
+  },
+  {
+    "team": "Minnesota Lynx",
+    "total_games": 18,
+    "most_common_lineup_games": 11,
+    "unique_lineups": 5,
+    "consistency_score": 0.611
+  },
+  {
+    "team": "Seattle Storm",
+    "total_games": 18,
+    "most_common_lineup_games": 11,
+    "unique_lineups": 2,
+    "consistency_score": 0.611
+  },
+  {
+    "team": "Atlanta Dream",
+    "total_games": 18,
+    "most_common_lineup_games": 10,
+    "unique_lineups": 5,
+    "consistency_score": 0.556
+  },
+  {
+    "team": "Washington Mystics",
+    "total_games": 18,
+    "most_common_lineup_games": 10,
+    "unique_lineups": 5,
+    "consistency_score": 0.556
+  },
+  {
+    "team": "Chicago Sky",
+    "total_games": 16,
+    "most_common_lineup_games": 7,
+    "unique_lineups": 5,
+    "consistency_score": 0.438
+  },
+  {
+    "team": "New York Liberty",
+    "total_games": 17,
+    "most_common_lineup_games": 7,
+    "unique_lineups": 8,
+    "consistency_score": 0.412
+  },
+  {
+    "team": "Phoenix Mercury",
+    "total_games": 18,
+    "most_common_lineup_games": 7,
+    "unique_lineups": 3,
+    "consistency_score": 0.389
+  },
+  {
+    "team": "Indiana Fever",
+    "total_games": 18,
+    "most_common_lineup_games": 6,
+    "unique_lineups": 4,
+    "consistency_score": 0.333
+  },
+  {
+    "team": "Dallas Wings",
+    "total_games": 19,
+    "most_common_lineup_games": 6,
+    "unique_lineups": 8,
+    "consistency_score": 0.316
+  },
+  {
+    "team": "Los Angeles Sparks",
+    "total_games": 18,
+    "most_common_lineup_games": 5,
+    "unique_lineups": 7,
+    "consistency_score": 0.278
+  },
+  {
+    "team": "Golden State Valkyries",
+    "total_games": 16,
+    "most_common_lineup_games": 4,
+    "unique_lineups": 8,
+    "consistency_score": 0.25
+  },
+  {
+    "team": "Connecticut Sun",
+    "total_games": 17,
+    "most_common_lineup_games": 3,
+    "unique_lineups": 9,
+    "consistency_score": 0.176
+  }
+]

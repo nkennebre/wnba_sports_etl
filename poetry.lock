@@ -214,6 +214,21 @@ webencodings = "*"
 css = ["tinycss2 (>=1.1.0,<1.5)"]
 
 [[package]]
+name = "bs4"
+version = "0.0.2"
+description = "Dummy package for Beautiful Soup (beautifulsoup4)"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "bs4-0.0.2-py2.py3-none-any.whl", hash = "sha256:abf8742c0805ef7f662dce4b51cca104cffe52b835238afc169142ab9b3fbccc"},
+    {file = "bs4-0.0.2.tar.gz", hash = "sha256:a48685c58f50fe127722417bae83fe6badf500d54b55f7e39ffe43b798653925"},
+]
+
+[package.dependencies]
+beautifulsoup4 = "*"
+
+[[package]]
 name = "certifi"
 version = "2025.4.26"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -590,6 +605,25 @@ files = [
     {file = "defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61"},
     {file = "defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"},
 ]
+
+[[package]]
+name = "espn-scraper"
+version = "0.15.0"
+description = "ESPN scraper for major sports"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "espn_scraper-0.15.0-py2.py3-none-any.whl", hash = "sha256:30454f1977061e9f0498e0ed8781787151352cf46ff718fe386072b9a904f62e"},
+    {file = "espn_scraper-0.15.0.tar.gz", hash = "sha256:e67bc5dae346c36f40940bc9fa1ef3ca148b8067a6d0cc34e6ef9cea657b9971"},
+]
+
+[package.dependencies]
+bs4 = "*"
+lxml = "*"
+python-dateutil = "*"
+pytz = "*"
+requests = "*"
 
 [[package]]
 name = "executing"
@@ -3120,4 +3154,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "5a6ecd565d0752aaf19ae59bfa6e428db3ea0399f2689bab165bf72f9d6562e3"
+content-hash = "5d95a9613396fcddcf681121903b538aa82529e94c389eb5d6e7a098aa701652"
